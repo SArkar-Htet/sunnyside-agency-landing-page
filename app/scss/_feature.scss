@@ -37,11 +37,11 @@
     }
 
     &__title {
-      font-size: 2rem;
+      font-size: $large;
     }
 
     &__text {
-      padding-bottom: 1rem;
+      padding-bottom: $small;
     }
 
     &__link {

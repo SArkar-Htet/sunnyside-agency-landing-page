@@ -3,12 +3,6 @@
 $font-primary: 'Barlow', sans-serif;
 $font-secondary: 'Fraunces', serif;
 
-// Font Weight
-$regular: 400;
-$semi-bold: 600;
-$bold: 700;
-$black: 900;
-
 // Color
 // Primary
 $softRed: hsl(7, 99%, 70%);
@@ -22,3 +16,14 @@ $veryDarkGrayishBlue: hsl(213, 9%, 39%);
 $darkGrayishBlue: hsl(232, 10%, 55%);
 $grayishBlue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
+
+// Font Weight
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+$black: 900;
+
+// Font Size
+$small: 1rem;
+$medium: 1.125rem;
+$large: 2rem;
