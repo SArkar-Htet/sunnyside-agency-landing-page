@@ -1,0 +1,122 @@
+header {
+  background-image: url('/images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 33.75rem;
+  
+  @include breakpoint-up(medium) {
+    background-image: url('/images/desktop/image-header.jpg');
+    height: 49.6875rem;
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      @include breakpoint-down(small) {
+        position: absolute;
+        top: 5rem;
+        background: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100%);
+        padding: 1.875rem 0;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -25px;
+          right: 0;
+          border-style: solid;
+          border-width: 0 0 30px 30px;
+          border-color: transparent transparent #ffffff transparent;
+        }
+      }
+      
+      li {
+        padding: 0.9375rem 0;
+
+        a:link {
+          color: $darkGrayishBlue;
+          @include easeInOut(color, 300ms)
+        }
+        a:visited {
+          color: $darkGrayishBlue;
+        }
+        a:hover {
+          color: hsla(232, 10%, 55%, 0.5);
+        }
+        a:active {
+          color: $darkGrayishBlue;
+        }
+
+        @include breakpoint-up(medium) {
+          display: inline-block;
+          padding: 0rem 1.40625rem;
+
+          a:link {
+            color: $white;
+            @include easeInOut(color, 300ms)
+          }
+          a:visited {
+            color: $white;
+          }
+          a:hover {
+            color: hsla(0, 0%, 100%, 0.7);
+          }
+          a:active {
+            color: $white;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    &__hamburger {
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      
+      &, &:focus, &:active {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .header {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+
+    &__title{
+      letter-spacing: 0.3125rem;
+      @include breakpoint-up(medium) {
+        font-size: 3rem;
+        margin: 4.375rem auto;
+      }
+    }
+    
+    &__down__arrow {
+      img {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

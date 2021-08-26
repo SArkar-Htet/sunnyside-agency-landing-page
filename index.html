@@ -8,6 +8,14 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="/dist/css/style.min.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,12 +23,31 @@
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header>
+    <div class="container--fluid">
+      <nav class="nav">
+        <a href="/" class="nav__logo"><img src="/images/logo.svg" alt="Welcome to sunnyside agency"></a>
 
-  We are creatives
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><button class="btn__cta">Contact</button></li>
+        </ul>
+  
+        <button id="btnHamburger" class="nav__hamburger hide-for-desktop" aria-expanded="false" aria-controls="menu">
+          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+        </button>
+      </nav>
+    </div>
+  
+    <div class="header container--fluid">
+      <h1 class="header__title">We are creatives</h1>
+      <a href="#feature" class="header__down__arrow">
+        <img src="/images/icon-arrow-down.svg" alt="">
+      </a>
+    </div>
+  </header>
 
   Transform your brand
 
@@ -64,5 +91,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="/app/js/app.js"></script>
 </body>
 </html>

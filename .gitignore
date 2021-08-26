@@ -1,7 +1,9 @@
 *.sketch
 *.fig
 *.xd
+*.map
 /design/*
 README-template.md
+style-guide.md
 .DS_Store
 .prettierignore
