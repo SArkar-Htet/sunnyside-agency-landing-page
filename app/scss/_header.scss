@@ -106,6 +106,7 @@ header {
     text-transform: uppercase;
 
     &__title{
+      margin: 1rem auto;
       letter-spacing: 0.3125rem;
       @include breakpoint-up(medium) {
         font-size: 3rem;
@@ -115,7 +116,7 @@ header {
     
     &__down__arrow {
       img {
-        margin-top: 1rem;
+        margin-top: 3rem;
       }
     }
   }
