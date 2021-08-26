@@ -1,0 +1,94 @@
+.feature {
+  &-card {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint-up(medium) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__pic {
+      flex: 100%;
+      overflow-x: hidden;
+      @include breakpoint-up(medium) {
+        flex: 50%;
+
+        &-1 {
+          order: 2;
+        }
+      }
+    }
+
+    &__image {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    &__body {
+      flex: 100%;
+      padding: 3.75rem 1.4375rem;
+      @include breakpoint-up(medium) {
+        flex: 50%;
+        padding: 0 6.875rem;
+      }
+      @include breakpoint-down(small) {
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__text {
+      padding-bottom: 1rem;
+    }
+
+    &__link {
+      position: relative;
+      display: inline-block;
+      font-family: $font-secondary;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $veryDarkDesaturatedBlue;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 1rem);
+        bottom: -0.1875rem;
+        right: -0.5rem;
+        height: 0.625rem;
+        border-radius: 3.125rem;
+        z-index: -1;
+      }
+
+      &--yellow {
+        &::after {
+          content: "";
+          background: hsla(51, 100%, 49%, 0.3);
+          @include easeInOut(all, 300ms);
+        }
+
+        &:hover::after{
+          background: hsl(51, 100%, 49%);
+        }
+      }
+
+      &--red {
+        &::after {
+          content: "";
+          background: hsla(7, 99%, 70%, 0.3);
+          @include easeInOut(all, 300ms);
+        }
+
+        &:hover::after{
+          background: hsl(7, 99%, 70%);
+        }
+      }
+    }
+  }
+
+  
+}

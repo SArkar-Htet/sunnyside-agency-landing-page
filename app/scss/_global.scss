@@ -26,6 +26,10 @@ body {
     color: hsl(232, 10%, 55%);
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .container {
     &--fluid {
       padding: 1.875rem 1.4375rem;
