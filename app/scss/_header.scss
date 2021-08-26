@@ -80,9 +80,6 @@ header {
           }
         }
 
-        a {
-          text-decoration: none;
-        }
       }
 
     }
@@ -110,13 +107,16 @@ header {
       letter-spacing: 0.3125rem;
       @include breakpoint-up(medium) {
         font-size: 3rem;
-        margin: 4.375rem auto;
+        margin: 3.4375rem auto;
       }
     }
     
     &__down__arrow {
       img {
         margin-top: 3rem;
+        @include breakpoint-up(medium) {
+          margin-top: 2rem;
+        }
       }
     }
   }
