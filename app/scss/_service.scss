@@ -1,0 +1,39 @@
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  &-card {
+    flex: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+      flex: 50%;
+    }
+
+    &--design {
+      background-image: url('/images/mobile/image-graphic-design.jpg');
+      h2, p {
+        color: $darkDesaturatedCyan;
+      }
+    }
+
+    &--photo {
+      background-image: url('/images/mobile/image-photography.jpg');
+      h2, p {
+        color: $darkBlue;
+      }
+    }
+
+    &__body {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      width: calc(100% - 2.875rem);  
+      transform: translateX(-50%);
+    }
+  }
+}
