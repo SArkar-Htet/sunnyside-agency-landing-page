@@ -7,12 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 600px;
+    min-height: 37.5rem;
     text-align: center;
     padding: 0 1.4375rem;
     
     h3 {
-      font-size: 28px;
+      font-size: 1.75rem;
     }
 
     @include breakpoint-up(medium) {
@@ -45,7 +45,7 @@
 
     &__body {
       position: absolute;
-      bottom: 40px;
+      bottom: 2.5rem;
       left: 50%;
       width: calc(100% - 2.875rem);  
       transform: translateX(-50%);
