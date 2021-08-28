@@ -15,7 +15,6 @@
 
     &__link {
       color: $darkModerateCyan;
-      @include easeInOut(all, 300ms);
 
       &:hover {
         color: $white;

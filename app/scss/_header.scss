@@ -49,7 +49,6 @@ header {
 
         a:link {
           color: $darkGrayishBlue;
-          @include easeInOut(color, 300ms)
         }
         a:visited {
           color: $darkGrayishBlue;
@@ -67,7 +66,6 @@ header {
 
           a:link {
             color: $white;
-            @include easeInOut(color, 300ms)
           }
           a:visited {
             color: $white;
