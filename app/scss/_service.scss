@@ -19,26 +19,26 @@
     }
 
     &--design {
-      background-image: url('/images/mobile/image-graphic-design.jpg');
+      background-image: url('../../images/mobile/image-graphic-design.jpg');
 
       h3, p {
         color: $darkDesaturatedCyan;
       }
 
       @include breakpoint-up(medium) {
-        background-image: url('/images/desktop/image-graphic-design.jpg');
+        background-image: url('../../images/desktop/image-graphic-design.jpg');
       }
 
     }
 
     &--photo {
-      background-image: url('/images/mobile/image-photography.jpg');
+      background-image: url('../../images/mobile/image-photography.jpg');
       h3, p {
         color: $darkBlue;
       }
 
       @include breakpoint-up(medium) {
-        background-image: url('/images/desktop/image-photography.jpg');
+        background-image: url('../../images/desktop/image-photography.jpg');
       }
     }
 
