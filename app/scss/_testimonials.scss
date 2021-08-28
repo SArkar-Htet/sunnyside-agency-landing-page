@@ -9,7 +9,6 @@
     text-transform: uppercase;
     font-size: $small;
     letter-spacing: 0.3125rem;
-    font-weight: $black;
     color: $grayishBlue;
 
     @include breakpoint-up(medium) {
@@ -45,7 +44,6 @@
       &__name {
         margin-bottom: 0.625rem;
         font-size: $medium;
-        font-weight: $black;
         color: $veryDarkDesaturatedBlue;
       }
 

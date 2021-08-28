@@ -57,6 +57,10 @@ body {
 
   }
 
+  .font-bold {
+    font-weight: $black;
+  }
+
   .btn {
     padding: 1.25rem 2rem;
     border: none;
@@ -103,7 +107,7 @@ body {
     color: $darkModerateCyan;
 
     a { 
-      color: $darkDesaturatedCyan; 
+      color: $darkDesaturatedCyan;
       &:hover {
         color: $white;
       }
