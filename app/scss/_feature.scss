@@ -26,10 +26,8 @@
 
     &__body {
       flex: 100%;
-      padding: 3.75rem 1.4375rem;
       @include breakpoint-up(medium) {
         flex: 50%;
-        padding: 0 6.875rem;
       }
       @include breakpoint-down(small) {
         text-align: center;
@@ -41,7 +39,7 @@
     }
 
     &__text {
-      padding-bottom: $small;
+      padding-bottom: 1rem;
     }
 
     &__link {

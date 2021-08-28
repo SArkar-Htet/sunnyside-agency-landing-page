@@ -32,29 +32,46 @@ body {
   }
 
   .container {
-    max-width: 70rem;
-    margin: 0 auto;
-    &--fluid {
-      padding: 1.875rem 1.4375rem;
-      @include breakpoint-up(large) {
-        padding: 1.875rem 2.5rem;
-      }
+    padding: 1.875rem 1.4375rem;
+
+    @include breakpoint-up(large) {
+      padding: 1.875rem 2.5rem;
+    }
+  }
+
+  .p {
+    padding: 3.75rem 1.4375rem;
+
+    &-b {
+      padding-bottom: 3.75rem;
     }
 
-    &--x {
+    &-x {
       padding-right: 1.4375rem;
       padding-left: 1.4375rem;
-      @include breakpoint-up(large) {
-        padding-right: 2.5rem;
-        padding-left: 2.5rem;
+
+      &-5 {
+        @extend .p-x;
+
+        @include breakpoint-up(medium) {
+          padding-right: 6.875rem;
+          padding-left: 6.875rem;
+        }
       }
     }
 
-    &--y {
-      padding-top: 1.875rem;
-      padding-bottom: 1.875rem;
-    }
+    &-y {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
 
+      &-5 {
+        @extend .p-y;
+        @include breakpoint-up(medium) {
+          padding-top: 9.375rem;
+          padding-bottom: 9.375rem;
+        }
+      }
+    }
   }
 
   .font-bold {
