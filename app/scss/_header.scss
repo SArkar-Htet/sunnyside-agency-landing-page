@@ -101,11 +101,11 @@ header {
     text-transform: uppercase;
 
     &__title{
-      margin: 1rem auto;
+      margin: 2rem auto;
       letter-spacing: 0.3125rem;
       @include breakpoint-up(medium) {
         font-size: 3rem;
-        margin: 3.4375rem auto;
+        margin: 4.4375rem auto;
       }
     }
     
