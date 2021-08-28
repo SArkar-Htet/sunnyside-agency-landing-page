@@ -1,0 +1,46 @@
+.footer {
+  background: $footerBg;
+  text-align: center;
+  padding: 3.75rem 1.4375rem;
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &__item {
+      display: inline-block;
+      padding: 40px 20px;
+    }
+
+    &__link {
+      color: $darkModerateCyan;
+      @include easeInOut(all, 300ms);
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__social-icon {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 40px 13px 0px;
+
+      a {
+        svg path {
+          @include easeInOut(all, 300ms);
+        }
+
+        &:hover svg path{
+          fill: $white;
+        }
+      }
+    }
+  }
+}

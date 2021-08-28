@@ -28,6 +28,7 @@ body {
 
   a{
     text-decoration: none;
+    @include easeInOut(all, 300ms);
   }
 
   .container {
@@ -92,6 +93,20 @@ body {
   .hide-for-mobile {
     @include breakpoint-down(small) {
       display: none;
+    }
+  }
+
+  .attribution {
+    background: $footerBg;
+    font-size: 11px;
+    text-align: center;
+    color: $darkModerateCyan;
+
+    a { 
+      color: $darkDesaturatedCyan; 
+      &:hover {
+        color: $white;
+      }
     }
   }
 }
