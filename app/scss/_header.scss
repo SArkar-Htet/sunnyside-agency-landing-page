@@ -3,8 +3,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  // height: 33.75rem;
-  height: 100vh;
+  height: 33.75rem;
   
   @include breakpoint-up(medium) {
     background-image: url('../../images/desktop/image-header.jpg');
