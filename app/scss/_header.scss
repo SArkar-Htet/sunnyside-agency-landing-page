@@ -115,6 +115,11 @@ header {
         @include breakpoint-up(medium) {
           margin-top: 2rem;
         }
+        @include easeInOut(all, 300ms);
+      }
+
+      &:hover img {
+        transform: translateY(1rem);
       }
     }
   }
