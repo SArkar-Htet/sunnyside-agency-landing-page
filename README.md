@@ -58,4 +58,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Firstly, thanks to my senior [Ayar Hlaine](https://ayarhlaine.dev/) who is teaching me and enhancing my knowledge in the web development field. And then, [Coder Coder](https://coder-coder.com/) who is introducing mobile-first workflow and how to build a website from scratch. I’d referenced class name, scroll idea and some coding styles from [Jim’s solution](https://www.frontendmentor.io/solutions/build-by-scss-bem-flexbox-gridbox-vanilla-javascript-and-jquery-jMwqm1kOl). Thanks all.
+Firstly, thanks to my senior [Ayar Hlaine](https://ayarhlaine.dev/) who is teaching me in the web development field. And then, [Coder Coder](https://coder-coder.com/) who is introducing mobile-first workflow and how to build a website from scratch. I’d referenced class name, scroll idea and some coding styles from [Jim’s solution](https://www.frontendmentor.io/solutions/build-by-scss-bem-flexbox-gridbox-vanilla-javascript-and-jquery-jMwqm1kOl). Thanks all.
