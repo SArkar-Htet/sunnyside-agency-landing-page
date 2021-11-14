@@ -7,9 +7,11 @@ btnHamburger.addEventListener('click', function () {
     navMenu.classList.add('fade-out');
     navMenu.classList.remove('fade-in');
     fill.style.fill = "rgba(250, 250, 250)";
+    btnHamburger.setAttribute("aria-expanded", false);
   } else { //Open Hamburger Menu
     navMenu.classList.remove('fade-out');
     navMenu.classList.add('fade-in');
     fill.style.fill = "rgba(250, 250, 250, 0.7)";
+    btnHamburger.setAttribute("aria-expanded", true);
   }
 })

@@ -2,7 +2,7 @@
 *.fig
 *.xd
 *.map
-/design/*
+/design/
 README-template.md
 style-guide.md
 .DS_Store
